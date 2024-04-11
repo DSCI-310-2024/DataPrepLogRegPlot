@@ -3,7 +3,7 @@ import numpy as np
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-from model import split_data, train_model, evaluate_model, plot_metrics
+from src.model import split_data, train_model, evaluate_model, plot_metrics
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 

@@ -9,12 +9,12 @@ How to run test: pytest tests/test_data_cleaning.py
 
 # Adjust the path to include the src directory
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
-from function_data_cleaning import clean_and_save_data_f
+from src.function_data_cleaning import clean_and_save_data_f
 
 
 #sample valid/invalid paths
-input_path = 'DATA/test.csv'
-output_path = 'DATA'
+input_path = 'docs/DATA/test.csv'
+output_path = 'docs/DATA'
 # Sample data creation
 df = pd.DataFrame({
     'A': [1, 2, np.nan, 4, 10, 6, 7, 8, 900],

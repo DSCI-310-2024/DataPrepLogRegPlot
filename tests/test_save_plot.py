@@ -21,7 +21,7 @@ def test_save_plot():
     directory = str(os.getcwd() + "/../test/")  # Set the directory to the current working directory
 
     # Read the data
-    df = pd.read_csv("DATA/laptops.csv")
+    df = pd.read_csv("docs/DATA/laptops.csv")
     
     #first graph: brand distribution
     categorical = df.select_dtypes(include=['object'])
