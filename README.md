@@ -30,12 +30,7 @@ For Windows:
 python -m venv venv
 .\venv\Scripts\activate
 ```
-3.Install the development dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-4.Run the tests:
+3.Run the tests:
 ```bash
 pytest tests/
 ```
