@@ -9,7 +9,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ cookiecutter.python_version }}
+          python-version: '3.11'  # Specified Python version from pyproject.toml
 
       - name: Check-out repository
         uses: actions/checkout@v3
@@ -21,12 +21,12 @@ jobs:
         run: poetry install
 
       - name: Test with pytest
-        run: poetry run pytest tests/ --cov=${{ cookiecutter.__package_slug }} --cov-report=xml
+        run: poetry run pytest tests/ --cov=pylaptoppred --cov-report=xml  # Package name from pyproject.toml
 
       - name: Use Codecov to track coverage
         uses: codecov/codecov-action@v3
         with:
-          files: ./coverage.xml   # coverage report
+          files: ./coverage.xml   # Coverage report file
 
       - name: Build documentation
         run: poetry run make html --directory docs/
@@ -42,7 +42,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ cookiecutter.python_version }}
+          python-version: '3.11'  # Repeated Python version as above
 
       - name: Check-out repository
         uses: actions/checkout@v3
@@ -68,7 +68,7 @@ jobs:
             pip install \
             --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
-            ${{ cookiecutter.__package_slug }}
+            pylaptoppred
 
       - name: Publish to PyPI
         if: steps.release.outputs.released == 'true'
