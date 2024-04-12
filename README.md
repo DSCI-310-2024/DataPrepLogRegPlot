@@ -1,6 +1,6 @@
 # pylaptoppred
 
-`pylaptoppred` is a Python package tailored for data scientists and analysts focusing on predictive analytics in laptop pricing. This package brings together data cleaning, file copying, logistic regression modeling, and plot saving functionalities to facilitate a smoother workflow from raw data to insights.
+`pylaptoppred` is a Python package tailored for data scientists and analysts focusing on predictive analytics. This package brings together data cleaning, file copying, logistic regression modeling, and plot saving functionalities to facilitate a smoother workflow from raw data to insights.
 
 ## Installation
 
