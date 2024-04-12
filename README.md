@@ -54,6 +54,6 @@ We welcome contributions to `DataPrepLogRegPlot`. For more information on how to
 
 ## Credits
 
-`DataPrepLogRegPlot` was developed by [An Zhou](https://github.com/brico12),[Anna Czarnocka]https://github.com/AnnaCzarnocka), [Daniel Lima](https://github.com/daniel1lima) and [Lucas Liu](https://github.com/SugarLucas). We extend our gratitude to all future contributors for their invaluable input.
+`DataPrepLogRegPlot` was developed by our Data Scientist team from the University of British Columbia, consisting of [An Zhou](https://github.com/brico12),[Anna Czarnocka]https://github.com/AnnaCzarnocka), [Daniel Lima](https://github.com/daniel1lima) and [Lucas Liu](https://github.com/SugarLucas). We extend our gratitude to all future contributors for their invaluable input.
 
 `DataPrepLogRegPlot` was created using the package template from [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
