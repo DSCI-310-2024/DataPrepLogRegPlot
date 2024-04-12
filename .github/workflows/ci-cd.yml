@@ -32,7 +32,7 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: SugarLucas/pylaptoppred
+          slug: DSCI-310-2024/pylaptoppred
 
       - name: Build documentation
         run: poetry run make html --directory docs/
