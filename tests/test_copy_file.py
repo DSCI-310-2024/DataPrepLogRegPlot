@@ -4,7 +4,7 @@ import pytest
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from src.copy_file import copy_file
+from pylaptoppred.copy_file import copy_file
 
 def test_copy_file_data(tmpdir):
     input_path = os.path.join(tmpdir, 'input.txt')

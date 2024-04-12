@@ -5,7 +5,7 @@ import pytest
 
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.save_plot import save_plot
+from pylaptoppred.save_plot import save_plot
 import altair as alt
 import pandas as pd
 import seaborn as sns
