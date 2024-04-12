@@ -8,6 +8,33 @@ prediccting laptop prices base on algorithms
 $ pip install pylaptoppred
 ```
 
+## Setup for Development and Testing
+
+If you want to set up pylaptoppred for development and run tests, follow these steps:
+
+1.Clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/yourusername/pylaptoppred.git
+cd pylaptoppred
+```
+2.Create and activate a virtual environment:
+
+For macOS and Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+For Windows:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+3.Run the tests:
+```bash
+pytest tests/
+```
+
 ## Usage
 
 - TODO
