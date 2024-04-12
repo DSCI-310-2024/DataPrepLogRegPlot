@@ -1,52 +1,59 @@
 # pylaptoppred
 
-prediccting laptop prices base on algorithms
+`pylaptoppred` is a Python package tailored for data scientists and analysts focusing on predictive analytics in laptop pricing. This package brings together data cleaning, file copying, logistic regression modeling, and plot saving functionalities to facilitate a smoother workflow from raw data to insights.
 
 ## Installation
 
-```bash
-$ pip install pylaptoppred
-```
+To install `pylaptoppred`, run the following command:
 
-## Setup for Development and Testing
-
-If you want to set up pylaptoppred for development and run tests, follow these steps:
-
-1.Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/yourusername/pylaptoppred.git
-cd pylaptoppred
-```
-2.Create and activate a virtual environment:
-
-For macOS and Linux:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-For Windows:
-```bash
-python -m venv venv
-.\venv\Scripts\activate
-```
-3.Run the tests:
-```bash
-pytest tests/
+pip install pylaptoppred
 ```
 
 ## Usage
 
-- TODO
+Below are some examples of how you can use the functionalities provided by pylaptoppred:
+
+```python
+from pylaptoppred import copy_file, function_data_cleaning, model, save_plot
+
+# Example file paths
+# replace "path/to/..." with the actual file paths you will be using in your project
+raw_data_path = "path/to/raw/laptop_prices.csv"
+clean_data_path = "path/to/cleaned/laptop_prices.csv"
+model_output_path = "path/to/output/model.pkl"
+plot_output_path = "path/to/output/performance_plot.png"
+
+# Copy files
+copy_file.copy(raw_data_path, clean_data_path)
+
+# Clean your data
+cleaned_data = function_data_cleaning.clean_data(clean_data_path)
+
+# Fit a logistic regression model
+laptop_price_model = model.fit_logistic_regression(cleaned_data, target_variable="price")
+
+# Save the model performance plot
+save_plot.save_performance_plot(laptop_price_model, plot_output_path)
+```
+
+## Features
+
+- `copy_file`: Simplifies the process of copying data files from one location to another.
+- `function_data_cleaning`: Contains functions for cleaning and preparing data for analysis.
+- `model`: Provides an interface to fit logistic regression models, optimized for price prediction tasks.
+- `save_plot`: Offers utilities to save various diagnostic and performance plots for models.
 
 ## Contributing
 
-Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+We welcome contributions to `pylaptoppred`. For more information on how to contribute, please check `CONTRIBUTING.md`. This project adheres to a Code of Conduct outlined in `CONDUCT`.md. By contributing to this project, you agree to abide by its terms.
 
 ## License
 
-`pylaptoppred` was created by Lucas Liu. It is licensed under the terms of the MIT license.
+`pylaptoppred` is released under the MIT license, as found in the `LICENSE` file.
 
 ## Credits
 
-`pylaptoppred` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`pylaptoppred` was developed by [An Zhou](https://github.com/brico12),[Anna Czarnocka]https://github.com/AnnaCzarnocka), [Daniel Lima](https://github.com/daniel1lima) and [Lucas Liu](https://github.com/SugarLucas). We extend our gratitude to all future contributors for their invaluable input.
+
+`pylaptoppred` was created using the package template from [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
