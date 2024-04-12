@@ -1,21 +1,21 @@
-# DataPrepLogRegPlot
+# pylaptoppred
 
-`DataPrepLogRegPlot` is a Python package tailored for data scientists and analysts focusing on predictive analytics in laptop pricing. This package brings together data cleaning, file copying, logistic regression modeling, and plot saving functionalities to facilitate a smoother workflow from raw data to insights.
+`pylaptoppred` is a Python package tailored for data scientists and analysts focusing on predictive analytics in laptop pricing. This package brings together data cleaning, file copying, logistic regression modeling, and plot saving functionalities to facilitate a smoother workflow from raw data to insights.
 
 ## Installation
 
-To install `DataPrepLogRegPlot`, run the following command:
+To install `pylaptoppred`, run the following command:
 
 ```bash
-pip install DataPrepLogRegPlot
+pip install pylaptoppred
 ```
 
 ## Usage
 
-Below are some examples of how you can use the functionalities provided by DataPrepLogRegPlot:
+Below are some examples of how you can use the functionalities provided by pylaptoppred:
 
 ```python
-from DataPrepLogRegPlot import copy_file, function_data_cleaning, model, save_plot
+from pylaptoppred import copy_file, function_data_cleaning, model, save_plot
 
 # Example file paths
 # replace "path/to/..." with the actual file paths you will be using in your project
@@ -46,14 +46,14 @@ save_plot.save_performance_plot(laptop_price_model, plot_output_path)
 
 ## Contributing
 
-We welcome contributions to `DataPrepLogRegPlot`. For more information on how to contribute, please check `CONTRIBUTING.md`. This project adheres to a Code of Conduct outlined in `CONDUCT`.md. By contributing to this project, you agree to abide by its terms.
+We welcome contributions to `pylaptoppred`. For more information on how to contribute, please check `CONTRIBUTING.md`. This project adheres to a Code of Conduct outlined in `CONDUCT`.md. By contributing to this project, you agree to abide by its terms.
 
 ## License
 
-`DataPrepLogRegPlot` is released under the MIT license, as found in the `LICENSE` file.
+`pylaptoppred` is released under the MIT license, as found in the `LICENSE` file.
 
 ## Credits
 
-`DataPrepLogRegPlot` was developed by [An Zhou](https://github.com/brico12),[Anna Czarnocka]https://github.com/AnnaCzarnocka), [Daniel Lima](https://github.com/daniel1lima) and [Lucas Liu](https://github.com/SugarLucas). We extend our gratitude to all future contributors for their invaluable input.
+`pylaptoppred` was developed by [An Zhou](https://github.com/brico12),[Anna Czarnocka]https://github.com/AnnaCzarnocka), [Daniel Lima](https://github.com/daniel1lima) and [Lucas Liu](https://github.com/SugarLucas). We extend our gratitude to all future contributors for their invaluable input.
 
-`DataPrepLogRegPlot` was created using the package template from [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`pylaptoppred` was created using the package template from [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
